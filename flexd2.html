@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+    .main {
+      width: 900px;
+
+      margin-left: 150px;
+
+      margin-right: 100px;
+      flex-wrap: wrap;
+      background-color: grey;
+      border: solid brown 2px;
+      display: flex;
+      gap: 0px;
+      /* justify-content: center; */
+      align-items: flex-start;
+      flex-direction: row;
+
+
+    }
+
+    .item-2 {
+      flex-basis: 200px;
+      height: 290px;
+      flex-grow: 0;
+      flex-shrink: 1;
+      background-color: antiquewhite;
+      border: solid white 2px;
+      background-image: url(apple.jpeg);
+      background-position: ;
+      background-repeat: no-repeat;
+      background-size: 100% 50%;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+
+    .apple-1 {
+      margin-top: 150px;
+      font-size: 15px;
+      margin-left: 4px;
+    }
+
+    .apple-2 {
+      font-style: italic;
+      color: grey;
+      flex-grow: 0;
+      flex-shrink: 1;
+      margin-top: 0px;
+      margin-left: 4px;
+    }
+
+    .item-3 {
+      flex-basis: 200px;
+      border: solid white 2px;
+      height: 290px;
+      flex-grow: 0;
+      flex-shrink: 1;
+      background-color: antiquewhite;
+      background-image: url(banana.jpeg);
+      background-position: ;
+      background-repeat: no-repeat;
+      background-size: 100% 50%;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+
+    }
+
+    .banana-1 {
+      margin-top: 150px;
+      font-size: 15px;
+      margin-left: 4px;
+    }
+
+    .banana-2 {
+      font-style: italic;
+      color: grey;
+      flex-grow: 0;
+      flex-shrink: 1;
+      margin-top: 0px;
+      margin-left: 4px;
+    }
+
+    .item-4 {
+      flex-basis: 200px;
+      border: solid white 2px;
+      height: 290px;
+      flex-grow: 0;
+      flex-shrink: 1;
+      background-color: antiquewhite;
+      background-image: url(blueberry.jpeg);
+      background-position: ;
+      background-repeat: no-repeat;
+      background-size: 100% 50%;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+    }
+
+    .blueberry-1 {
+      margin-top: 150px;
+      font-size: 15px;
+      margin-left: 4px;
+    }
+
+    .blueberry-2 {
+      font-style: italic;
+      color: grey;
+      flex-grow: 0;
+      flex-shrink: 1;
+      margin-top: 0px;
+      margin-left: 4px;
+    }
+
+    .item-5 {
+      flex-basis: 200px;
+      border: solid white 2px;
+      height: 290px;
+      flex-grow: 0;
+      flex-shrink: 1;
+      background-color: antiquewhite;
+      background-image: url(strawberry.jpeg);
+      background-position: ;
+      background-repeat: no-repeat;
+      background-size: 100% 50%;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+    }
+
+    .strawberry-1 {
+      margin-top: 150px;
+      font-size: 15px;
+      margin-left: 4px;
+    }
+
+    .strawberry-2 {
+      font-style: italic;
+      color: grey;
+      flex-grow: 0;
+      flex-shrink: 1;
+      margin-top: 0px;
+      margin-left: 4px;
+    }
+
+    .item-6 {
+      flex-basis: 200px;
+      border: solid white 2px;
+      height: 290px;
+      flex-grow: 0;
+      flex-shrink: 1;
+      background-color: antiquewhite;
+      background-image: url(pomo.jpeg);
+      background-position: ;
+      background-repeat: no-repeat;
+      background-size: 100% 50%;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+    }
+
+    .pomo-1 {
+      margin-top: 150px;
+      font-size: 15px;
+      margin-left: 4px;
+    }
+
+    .pomo-2 {
+      font-style: italic;
+      color: grey;
+      flex-grow: 0;
+      flex-shrink: 1;
+      margin-top: 0px;
+      margin-left: 4px;
+    }
+
+    .item-7 {
+      flex-basis: 200px;
+      border: solid white 2px;
+      height: 290px;
+      flex-grow: 0;
+      flex-shrink: 1;
+      background-color: antiquewhite;
+      background-image: url(pap.jpeg);
+      background-position: ;
+      background-repeat: no-repeat;
+      background-size: 100% 50%;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+    }
+
+    .pap-1 {
+      margin-top: 150px;
+      font-size: 15px;
+      margin-left: 4px;
+    }
+
+    .pap-2 {
+      font-style: italic;
+      color: grey;
+      flex-grow: 0;
+      flex-shrink: 1;
+      margin-top: 0px;
+      margin-left: 4px;
+    }
+
+    .item-8 {
+      flex-basis: 200px;
+      border: solid white 2px;
+      height: 290px;
+      flex-grow: 0;
+      flex-shrink: 1;
+      background-color: antiquewhite;
+      background-image: url(download.jpeg);
+      background-position: ;
+      background-repeat: no-repeat;
+      background-size: 100% 50%;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+    }
+
+    .kiwi-1 {
+      margin-top: 150px;
+      font-size: 15px;
+      margin-left: 4px;
+    }
+
+    .kiwi-2 {
+      font-style: italic;
+      color: grey;
+      flex-grow: 0;
+      flex-shrink: 1;
+      margin-top: 0px;
+      margin-left: 4px;
+    }
+
+    .item-9 {
+      flex-basis: 200px;
+      border: solid white 2px;
+      height: 290px;
+      flex-grow: 0;
+      flex-shrink: 1;
+      background-color: antiquewhite;
+      background-image: url(mangoes.jpeg);
+      background-position: ;
+      background-repeat: no-repeat;
+      background-size: 100% 50%;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+    }
+
+    .man-1 {
+      margin-top: 150px;
+      font-size: 15px;
+      margin-left: 4px;
+    }
+
+    .man-2 {
+      font-style: italic;
+      color: grey;
+      flex-grow: 0;
+      flex-shrink: 1;
+      margin-top: 0px;
+      margin-left: 4px;
+    }
+  </style>
+
+  <body>
+    <div class="main">
+      <div class="item-2">
+        <h3 class="apple-1"><strong>"An apple a day keep your doctor away"</strong></h3>
+        <p class="apple-2">Apples are rich in vitamin "C", provide fiber and supports immunity, heart, health and
+          digestion with natural
+          nutrients.</p>
+      </div>
+      <div class="item-3">
+        <h3 class="banana-1"><strong></strong>"Banana Boost-Peel Into Power"</h3>
+        <p class="banana-2">Bananas are rich in potassium Vitamin B6 and fiber. They boost energy, support and aid
+          digestion naturally.</p>
+      </div>
+      <div class="item-4">
+        <h3 class="blueberry-1">"Tiny Superfruit ith Mighty Benefits"</h3>
+        <p class="blueberry-2">Blueberries are loaded with antioxidants, Vitamin C, and Fiber. They support brain
+          health, improve skin and fight aging naturally.</p>
+      </div>
+      <div class="item-5">
+        <h3 class="strawberry-1">"The Sweetheart of Superfruit"</h3>
+        <p class="strawberry-2">
+          Strawberries are rich in Vitamin C, antioxidants and fiber. They boost immunity, promote glowing skin and
+          support heart health.
+        </p>
+      </div>
+      <div class="item-6">
+        <h3 class="pomo-1">"Pomegranate: The jwel of Health"</h3>
+        <p class="pomo-2">Pomegranates are rich in antioxidants, vitamin C, and potassium. They boost heart health,
+          improve digestion and fight inflamation naturally.</p>
+      </div>
+      <div class="item-7">
+        <h3 class="pap-1">"Papaya: The tropical Healer"</h3>
+        <p class="pap-2">Papayas are rich in vitamin C, A and enzymes. They boost digestion, improve skin, and
+          strengthen the immune system.</p>
+      </div>
+      <div class="item-8">
+        <h3 class="kiwi-1">"Kiwi: The Zesty Green Powerhouse"</h3>
+        <p class="kiwi-2">Kiwis are loaded with vitaminC E and fiber. They boost immunity, aid digestion and support
+          healthy skin. </p>
+      </div>
+      <div class="item-9">
+        <h3 class="man-1
+        ">"Mango: The King Of Fruits "</h3>
+        <p class="man-2">Mangoes are rich in vitamin C, A and antioxidants. They boost immunity, improve eyesights and
+          promote healthy, glowing skin.</p>
+      </div>
+    </div>
+
+  </body>
+
+</html>
